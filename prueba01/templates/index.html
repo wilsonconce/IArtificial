@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css">
+    <title>Sistema</title>
+</head>
+
+<body>
+    <main class="container p-4">
+        <h1 class="display-4 text-center mt-4">SISTEMA DE PEDIDOS</h1>
+
+        <div class="row p-4">
+            <table class="table table-hover text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaDetalles">
+                    {% for productos in listaProductos %}
+                    <tr>
+                        {% for item in productos %}
+                        <td class="align-middle">{{ item }}</td>
+                        {% endfor %}
+                        <td>
+                            <ul class="justify-content-center">
+                                <a href="{% if nameUser != None%}/seleccionar/{{nameUser}}/{{id_cliente}}/{{productos[0]}}
+                                {%else%}
+                                /error
+                                {%endif%}" class="btn btn-success btn-sm">SELECT</a>
+                                <a href="" class="btn btn-danger btn-sm">DELETE</a>
+                            </ul>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-4 mx-auto my-auto">
+                <a href="/sing_in" class="btn btn-outline-success btn-block">SING IN</a>
+            </div>
+            <div class="col-4 mx-auto my-auto">
+                <a href="/register" class="btn btn-outline-primary btn-block">REGISTER</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
