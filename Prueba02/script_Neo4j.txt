@@ -1,0 +1,150 @@
+---------------------------------- Prueba ---------------------------------------------
+CREATE (n0:Nodo{name:'inicio'}),
+        (n1:Nodo{name:'E. Luis Cordero'}),
+        (n2:Nodo{name:'Centro I. Nenes'}),
+        (n3:Nodo{name:'S. de Gualaceo'}),
+        (n4:Nodo{name:'E. Brasil'}),
+        (n5:Nodo{name:'C. Alfonso Lituma'}),
+        (n6:Nodo{name:'C. Azuay'}),
+        (n7:Nodo{name:'C. Chiquititos'}),
+        (n8:Nodo{name:'UESME'}),
+        (n9:Nodo{name:'C. Chordeleg'}),
+        (n10:Nodo{name:'M. Payhuara'}),
+        (n11:Nodo{name:'U.E. Juan Bautista'}),
+        (n12:Nodo{name:'U.E. San Bartolome'}),
+        (n13:Nodo{name:'E. Bella Union'}),
+        (n14:Nodo{name:'C. Garaicoa'}),
+        (n15:Nodo{name:'U Azuay'}),
+        (n16:Nodo{name:'CEICA'}),
+        (n17:Nodo{name:'E. Arco Iris'}),
+        (n18:Nodo{name:'E. Padre Juan Carlo'}),
+        (n19:Nodo{name:'UPS'}),
+        (n20:Nodo{name:'Tecnico Salesiano'}),
+        (n21:Nodo{name:'Benigno malo'}),
+        (n22:Nodo{name:'Salesianas'}),
+        (n23:Nodo{name:'U Cuenca'}),
+        (n24:Nodo{name:'U Catolica'}),
+        (n25:Nodo{name:'U. E Kennedy'}),
+        (n26:Nodo{name:'E. Bomberos'}),
+        (n27:Nodo{name:'Colegio Aleman'}),
+        (n28:Nodo{name:'UNAE'}),
+        (n29:Nodo{name:'E. Pio Bravo'}),
+        (n30:Nodo{name:'E. Caguazhun Grande'}),
+        (n31:Nodo{name:'E. Jadan'}),
+        (n32:Nodo{name:'U. Zhidmad'}),
+        (n33:Nodo{name:'C. Pulgarcito'}),
+        (n34:Nodo{name:'U. E. Esperaza del Azuay'}),
+        (n35:Nodo{name:'Colegio Yanuncay'}),
+        (n36:Nodo{name:'C. Semillitas'}),
+        (n37:Nodo{name:'E. Federico Malo'}),
+        (n38:Nodo{name:'U. E. Paccha'}),
+        (n39:Nodo{name:'School'}),
+        (n40:Nodo{name:'C. Continental'}),
+        (n41:Nodo{name:'C. Miguel Malo'}),
+        (n42:Nodo{name:'C. Interandino'}),
+        (n43:Nodo{name:'C. Militar'}),
+        (n44:Nodo{name:'C. Aleman'}),
+        (n45:Nodo{name:'U. E. Nulti'}),
+        (n46:Nodo{name:'Addom Calderon'}),
+        (n47:Nodo{name:'Sudamericano'}),
+        (n48:Nodo{name:'C. Javier Loyola'}),
+        (n49:Nodo{name:'Espacio del Saber'}),
+        (n0)-[:ENLAZADO{cost:1}]->(n1),
+        (n0)-[:ENLAZADO{cost:2}]->(n2),
+        (n0)-[:ENLAZADO{cost:3}]->(n4),
+        (n0)-[:ENLAZADO{cost:14}]->(n45),
+        (n0)-[:ENLAZADO{cost:12}]->(n31),
+        (n1)-[:ENLAZADO{cost:7}]->(n29),
+        (n1)-[:ENLAZADO{cost:5}]->(n48),
+        (n29)-[:ENLAZADO{cost:5}]->(n28),
+        (n28)-[:ENLAZADO{cost:1}]->(n48),
+        (n48)-[:ENLAZADO{cost:12}]->(n38),
+        (n48)-[:ENLAZADO{cost:13}]->(n43),
+        (n43)-[:ENLAZADO{cost:1}]->(n25),
+        (n38)-[:ENLAZADO{cost:4}]->(n49),
+        (n25)-[:ENLAZADO{cost:2}]->(n49),
+        (n25)-[:ENLAZADO{cost:4}]->(n36),
+        (n36)-[:ENLAZADO{cost:2}]->(n42),
+        (n42)-[:ENLAZADO{cost:1}]->(n19),
+        (n2)-[:ENLAZADO{cost:8}]->(n8),
+        (n2)-[:ENLAZADO{cost:20}]->(n13),
+        (n8)-[:ENLAZADO{cost:2}]->(n9),
+        (n9)-[:ENLAZADO{cost:10}]->(n11),
+        (n11)-[:ENLAZADO{cost:2}]->(n12),
+        (n12)-[:ENLAZADO{cost:8}]->(n18),
+        (n18)-[:ENLAZADO{cost:3}]->(n17),
+        (n13)-[:ENLAZADO{cost:10}]->(n16),
+        (n16)-[:ENLAZADO{cost:4}]->(n17),
+        (n12)-[:ENLAZADO{cost:11}]->(n15),
+        (n15)-[:ENLAZADO{cost:3}]->(n14),
+        (n4)-[:ENLAZADO{cost:1}]->(n5),
+        (n5)-[:ENLAZADO{cost:2}]->(n10),
+	(n10)-[:ENLAZADO{cost:2}]->(n3),
+        (n5)-[:ENLAZADO{cost:1}]->(n6),
+        (n6)-[:ENLAZADO{cost:2}]->(n7),
+        (n31)-[:ENLAZADO{cost:6}]->(n30),
+        (n31)-[:ENLAZADO{cost:5}]->(n32),
+        (n32)-[:ENLAZADO{cost:3}]->(n39),
+        (n30)-[:ENLAZADO{cost:20}]->(n33),
+        (n33)-[:ENLAZADO{cost:9}]->(n34),
+        (n45)-[:ENLAZADO{cost:7}]->(n46),
+        (n45)-[:ENLAZADO{cost:8}]->(n41),
+        (n46)-[:ENLAZADO{cost:5}]->(n37),
+        (n37)-[:ENLAZADO{cost:4}]->(n21),
+        (n41)-[:ENLAZADO{cost:4}]->(n44),
+        (n44)-[:ENLAZADO{cost:3}]->(n47),
+        (n47)-[:ENLAZADO{cost:2}]->(n21),
+        (n44)-[:ENLAZADO{cost:13}]->(n20),
+	(n20)-[:ENLAZADO{cost:5}]->(n26),
+        (n41)-[:ENLAZADO{cost:2}]->(n40),
+        (n40)-[:ENLAZADO{cost:3}]->(n27),
+        (n27)-[:ENLAZADO{cost:7}]->(n24),
+        (n27)-[:ENLAZADO{cost:9}]->(n22),
+        (n40)-[:ENLAZADO{cost:4}]->(n35),
+	(n35)-[:ENLAZADO{cost:6}]->(n23);
+
+------------------------------------------------- Cracion Grafica ------------------------
+CALL gds.graph.create(
+    'myGraph',
+    'Nodo',
+    'ENLAZADO',
+    {
+        relationshipProperties: 'cost'
+    }
+)
+
+---------------------- Busqueda por profundidad ----------------
+MATCH (a:Nodo{name:'inicio'})
+WITH id(a) AS startNode
+CALL gds.alpha.dfs.stream('myGraph', {startNode: startNode})
+YIELD path
+UNWIND [ n in nodes(path) | n.name ] AS names
+RETURN names
+
+---------------------- Busqueda Amplitud --------------------
+
+MATCH (n0:Nodo{name:'inicio'}), (n19:Nodo{name:'UPS'})
+WITH id(n0) AS startNode, [id(n19)] AS targetNodes
+CALL gds.alpha.bfs.stream('myGraph', {startNode: startNode, targetNodes: targetNodes})
+YIELD path
+UNWIND [ n in nodes(path) | n.name ] AS names
+RETURN names
+
+---------------------- Dijkstra ----------------------------
+
+MATCH (source:Nodo {name: 'inicio'}), (target:Nodo {name: 'Salesianas'})
+CALL gds.shortestPath.dijkstra.stream('myGraph', {
+    sourceNode: source,
+    targetNode: target,
+    relationshipWeightProperty: 'cost'
+})
+YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+RETURN
+    index,
+    gds.util.asNode(sourceNode).name AS sourceNodeName,
+    gds.util.asNode(targetNode).name AS targetNodeName,
+    totalCost,
+    [nodeId IN nodeIds | gds.util.asNode(nodeId).name] AS nodeNames,
+    costs,
+    nodes(path) as path
+ORDER BY index
